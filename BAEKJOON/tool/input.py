@@ -11,3 +11,10 @@ def inputSizetoLine():
     # 첫번째 원소는 리스트의 크기이므로 제외
     # 슬라이싱을 사용한다.
     return list
+
+# 런타임 에러가 발생하는 경우
+# 개행문자를 제거해야 한다.
+def inputLineStrip():
+    # strip(): 문자열의 양쪽 끝에 있는 공백과 개행문자를 제거한다.
+    list = list(map(int, sys.stdin.readline().strip().split()))
+    return list
